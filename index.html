@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+
+        /* *{
+            border: 1px solid;
+        } */
+
+        .textarea {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .des {
+            margin: 2rem 6rem;
+            padding: 2rem;
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+
+        .heading1 {
+            background-color: rgba(128, 128, 128, 0.521);
+            padding: 2rem;
+            margin: 2rem 6rem;
+            border: 2px solid rgba(52, 50, 50, 0.454);
+            border-radius: 8px;
+
+        }
+
+        #heading {
+            color: rgb(91, 88, 88);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            background-color: rgb(167, 54, 54);
+            border-radius: 8px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 10px;
+            padding: 6px;
+        }
+
+        .nav-title {
+
+            /* width: 50; */
+            margin: 0 45rem 0 0;
+            font-family: cursive;
+            font-size: large;
+            color: #fff;
+        }
+
+        .navbar a {
+            margin: 3px 3px;
+            padding: 10px 10px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+
+        .navbar a:hover {
+            color: black;
+        }
+
+        .side {
+            border: 2px solid grey;
+            border-width: 50%;
+            margin: 0 1rem;
+            background-color: #fff;
+        }
+
+        table {
+            text-align: center;
+            padding: 1rem 1.5rem;
+        }
+
+        td,
+        th {
+            padding: 0 .5rem;
+        }
+
+        td {
+
+            border-bottom: 1px gray;
+            border-bottom-style: solid;
+        }
+
+
+        .sideBox {
+            background-color: #fff;
+            width: 12rem;
+            display: inline;
+            border: 2px solid grey;
+            padding: 1rem 1.5rem;
+        }
+
+        .des1 {
+            color: rgba(0, 0, 0, 0.715);
+        }
+
+        .des2 {
+            color: rgba(0, 0, 0, 0.418);
+        }
+
+        .des3 {
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .des4 {
+            font-family: cursive;
+            color: rgba(0, 0, 0, 0.584);
+        }
+
+        .text {
+            color: red;
+        }
+
+        .copy{
+            text-align: center;
+        }
+        hr{
+            margin: 0;
+            padding: 0;
+        }
+        #copy {
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            background-color: rgb(167, 54, 54);
+            border-radius: 3px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <ul>
+                <li>
+                    <div class="nav-title">
+                        <b>TextQuant</b>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="heading1">
+        <h1 id="heading"><b> Word Counter</b></h1>
+        <div class="textarea">
+            <textarea placeholder="Enter Text Here" cols="100" rows="20"></textarea>
+            <div class="side">
+                <table class="table1">
+                    <tr>
+                        <th colspan="2">
+                            <h2>Statistics</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Words</th>
+                        <th>&nbsp;Charcters</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>&nbsp;0</h1>
+                        </td>
+                        <td>
+                            <h1>&nbsp;0</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Sentences</th>
+                        <th>&nbsp;Paragraphs</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>0</h1>
+                        </td>
+                        <td>
+                            <h1>0</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Reading Time</th>
+                        <th>&nbsp;Speaking Time</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>0</h1>
+                        </td>
+                        <td>
+                            <h1>0</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sideBox">
+                <h1>Keyword Density</h1>
+                <p>Start typing to get a list of keywords that are most used</p>
+                <hr>
+                <p>EXPORT AS:</p>
+                <button type="button">CSV</button>
+                <button type="button">TXT</button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="des">
+        <h1 class="des1">What Is Essay Word Counter?</h1>
+        <p>An essay word counter is a simple yet powerful tool that has the ability to quickly count the number of
+            characters and words within an essay. While the primary goal of an essay word counter is to measure
+            characters and words, this tool allows you to determine the number of sentences and paragraphs that your
+            essay consists of.</p>
+
+        <p>If you're tasked with reading your essay aloud in front of a classroom, this online word counter can help you
+            prepare by providing you with an estimated speaking time and reading time. If you're asking yourself "How do
+            I count the words in my essay?", plugging your essay into an online word counter will allow you to receive
+            nearly instantaneous results.</p>
+        <h1 class="des1">Benefits of Using This Tool Compared to Alternatives</h1>
+        <p>Online word counter tools offer the functionality you need to determine what your current essay word count
+            is. There are several additional tools that can provide you with similar functionality, which include
+            Microsoft Word, Google Docs, and PDF documents. Even though all of these alternatives allow users to measure
+            the word count and character count for their essay, they lack many of the extra features that set the online
+            tool apart from the competition.</p>
+        <h1 class="des1">Wordcounter vs Microsoft Word</h1>
+        <p>When comparing this online word counter to Microsoft Word, the online word counter allows users to paste any
+            kind of text into the box. Even if the text comes from a PDF file, it can be easily copied into the word
+            counter. Among all of the alternatives for an essay word counter, Microsoft Word may be the most
+            comprehensive of the three. Along with measuring the number of words, it can also count characters, pages,
+            lines, and paragraphs. The main issue with Word, however, is that it's less intuitive than using an online
+            tool.</p>
+
+        <p>When you click on word count in Microsoft Word, you'll be provided with data on the lines, paragraphs, words,
+            and other aspects of your essay. However, the word count extends to every page of the Word document. To
+            identify the number of words and characters in a specific section, you'll need to highlight the section and
+            select the word count option again.
+
+        </p>
+        <h1 class="des1">Wordcounter vs Google Docs</h1>
+        <p>As for Google Docs, this tool doesn't display a status bar that tells you how many words are present in the
+            document. To receive an updated word count, you must select the "Tools" tab that's found in the "Menu"
+            section. From here, you'll be able to select "Word Count". When compared to the online word checker tool,
+            Google Docs doesn't include information about how many sentences are in your essay or the frequency of a
+            specific word.
+
+        </p>
+        <h1 class="des1">Wordcounter vs PDF Tool</h1>
+        <p>When it comes to a PDF document, you'll find that these documents are similar to Google Docs in that they
+            don't include a status bar. You're also unable to access any kind of menu that allows you to view the word
+            count of the essay you're writing. There are two distinct options for identifying the word count in your
+            essay. First, you can convert the PDF file into what's known as the Rich Text Format, which makes it easier
+            for you to count the words. You could also upload the file directly into this online word counter, which
+            will give you an accurate word total.</p>
+
+        <p> The primary benefit of using the online word counter tool is that there are a number of exclusive features
+            like speaking time and reading time that can't be found in other tools like Microsoft Word and Google Docs.
+
+        </p>
+        <h1 class="des1">Essay Length Best Practices</h1>
+        <p>Whether you're writing an essay for a high school class or for graduate school, there are some best practices
+            that can guide you through the process and help you write the best essay. The most important element of
+            writing an essay is getting the length right. If the essay is too long, there's a good chance it isn't as
+            succinct and direct as it should be. The essay length guidelines you should adhere to include:
+
+        </p>
+        <h2>High school essay</h2>
+        <p>The average essay word count for a high school essay is 300-1,000 words. Most high school essays are five
+            paragraphs long with an introductory paragraph, three total body paragraphs, and a conclusion paragraph.
+
+        </p>
+        <h2 class="des2">College admission essay
+        </h2 class=des2>
+        <p>This essay should be around 200-650 words long. Along with having a set word limit, these essays should
+            include a look at your motivations and interests.
+
+        </p>
+        <h2 class="des2">Undergraduate essay
+        </h2>
+        <p>This essay can be around 1,500-5,000 words long. The content and length depend on the college and program
+            you're entering.
+
+        </p>
+        <h2 class="des2">Graduate admission essay
+        </h2>
+        <p>An admission essay should be 500-1,000 words in length. Make sure you include a lengthy personal statement
+            that details your motivations and academic achievements.
+
+        </p>
+        <h2 class="des2">Graduate school essay
+        </h2>
+        <p>This extended essay word count is usually around 2,500-6,000 words. The assignment you receive depends on the
+            course you're in. Most graduate-level essays are lengthy and can involve research papers.
+
+        </p>
+        <h2 class="des2">IB extended essay
+        </h2>
+        <p>The IB extended essay word count is 4,000 words. This essay is mandatory for every student of the
+            International Baccalaureate program and is based on independent research.
+
+        </p>
+        <p class="des3">Now that you understand the average essay word count, you should be ready to write your essay.
+            With the online word counter by your side, you can check total essay word count, keyword density, character
+            count, and speaking time in an instant.
+        </p>
+
+
+
+    </div>
+    <hr>
+    <div class="copy">
+        <h2 class="des4">
+            Let's Keep in Touch!!
+        </h2>
+        <div class="last">
+            <h2 class="text">&#9776;TextQuant</h2>
+        </div>
+        <hr>
+        <div id="copy">
+            <span><b>&copy; Copyright 2023 TextQunt</b></span>
+        </div>
+    </div>
+</body>
+
+</html>
